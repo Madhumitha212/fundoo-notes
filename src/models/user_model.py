@@ -1,7 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
+from src.config.database_conn import Base
  
 class User(Base):
     __tablename__ = "users"
